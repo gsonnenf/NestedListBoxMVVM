@@ -1,0 +1,18 @@
+﻿<Window x:Class="gstc.wpf.NestedListBoxMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gstc.wpf.NestedListBoxMVVM"
+        xmlns:view="clr-namespace:gstc.wpf.NestedListBoxMVVM.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <view:ProjectView x:Name="ProjectView"></view:ProjectView>
+        <Button Click="Button_Click">Add Layer</Button>
+        <Button Click="Button_Click_1">Add Operation</Button>
+        <Button Click="Button_Click_2">Remove Selected</Button>
+        <Button Click="Button_Click_3">Change Name</Button>
+        <Button Click="Button_Click_4" >New ViewModel</Button>
+    </StackPanel>
+</Window>
