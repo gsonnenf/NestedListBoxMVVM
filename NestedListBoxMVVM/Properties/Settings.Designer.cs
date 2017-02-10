@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace gstc.wpf.NesedtListBoxMVVM.Properties {
+namespace gstc.wpf.NestedListBoxMVVM.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

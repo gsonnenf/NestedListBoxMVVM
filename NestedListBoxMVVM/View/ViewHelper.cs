@@ -20,12 +20,12 @@ namespace gstc.wpf.NestedListBoxMVVM.View {
        
         }
 
-        public static childItem FindVisualChild<childItem>(DependencyObject obj) where childItem : DependencyObject {
+        public static TChildItem FindVisualChild<TChildItem>(DependencyObject obj) where TChildItem : DependencyObject {
             for (int i = 0; i < VisualTreeHelper.GetChildrenCount(obj); i++) {
                 DependencyObject child = VisualTreeHelper.GetChild(obj, i);
-                if (child != null && child is childItem) return (childItem)child;
+                if (child != null && child is TChildItem) return (TChildItem)child;
                 else {
-                    childItem childOfChild = FindVisualChild<childItem>(child);
+                    TChildItem childOfChild = FindVisualChild<TChildItem>(child);
                     if (childOfChild != null)
                         return childOfChild;
                 }

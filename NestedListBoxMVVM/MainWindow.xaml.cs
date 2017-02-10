@@ -20,7 +20,7 @@ namespace gstc.wpf.NestedListBoxMVVM {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-        private BaseViewModel ProjectViewModel;
+        public BaseViewModel ProjectViewModel { get; set; }
         public MainWindow() {
             InitializeComponent();
             ProjectViewModel = new BaseViewModel("Project 1");
@@ -42,14 +42,6 @@ namespace gstc.wpf.NestedListBoxMVVM {
             if (layerView == null) return;
             var operationIndex = (layerView.SelectedOperationIndex >= 0) ? layerView.SelectedOperationIndex : 0;
             layerView.SelectedLayerViewModel.Collection.Insert(operationIndex, new BaseViewModel("New Operation"));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e) {
-            //ListDisplay.ViewModelCollection.Collection[0].DisplayName = "Changed Name";
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e) {
-
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e) {

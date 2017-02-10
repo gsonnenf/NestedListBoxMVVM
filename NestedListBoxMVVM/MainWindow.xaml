@@ -11,8 +11,6 @@
         <view:ProjectView x:Name="ProjectView"></view:ProjectView>
         <Button Click="Button_Click">Add Layer</Button>
         <Button Click="Button_Click_1">Add Operation</Button>
-        <Button Click="Button_Click_2">Remove Selected</Button>
-        <Button Click="Button_Click_3">Change Name</Button>
         <Button Click="Button_Click_4" >New ViewModel</Button>
     </StackPanel>
 </Window>

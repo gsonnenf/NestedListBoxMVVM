@@ -7,7 +7,7 @@
     <ProjectGuid>{E98F4CC9-9227-4A4C-88E6-A20A8D2780B5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gstc.wpf.NesedtListBoxMVVM</RootNamespace>
+    <RootNamespace>gstc.wpf.NestedListBoxMVVM</RootNamespace>
     <AssemblyName>gstc.wpf.NestedListBoxMVVM</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
